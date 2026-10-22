@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>My Profile</h1>
+
+    <form id="profileForm">
+        <label>Username:
+            <input type="text" id="username" required>
+        </label>
+        <br><br>
+        <label>Birth Year:
+            <input type="number" id="birthYear" min="1900" max="2026" required>
+        </label>
+        <br><br>
+        <label>Birth Month (1-12):
+            <input type="number" id="birthMonth" min="1" max="12" required>
+        </label>
+        <br><br>
+        <button type="submit">Create / Update Profile</button>
+    </form>
+
+    <div id="profileInfo"></div>
+
+    <h2>My Hobbies</h2>
+
+    <input type="text" id="itemInput" placeholder="Type a new item">
+    <button id="addBtn">Add Item</button>
+    <button id="removeBtn">Remove Item</button>
+
+    <ul id="itemList">
+        <li>Coding</li>
+        <li>Football</li>
+        <li>Music</li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
